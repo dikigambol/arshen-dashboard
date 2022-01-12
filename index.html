@@ -27,8 +27,11 @@
 <body>
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper">
-
       <div class="main-panel">
+        <div class="btn-cashier d-lg-none">
+          <a class="btn btn-primary btn-block" data-toggle="offbill"><i
+              class="ti ti-shopping-cart"></i>&nbsp;&nbsp;cashier : 2 items</a>
+        </div>
         <div class="content-wrapper inline-view">
           <!-- main content  -->
           <div class="padding-content main-content-panel bg-grey-soft">
@@ -40,9 +43,7 @@
                 <input class="search_input" type="text" placeholder="Search Category or Menu">
               </div>
             </div>
-            <div class="">
-              <div class="hr-content"></div>
-            </div>
+            <div class="hr-content"></div>
             <div class="category">
               <a href="#" class="category-link">
                 <span class="title-category">
@@ -132,7 +133,7 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn btn-primary btn-block mt-3">Add to Bill</button>
+                    <button class="btn btn-primary btn-block mt-4">Add to Bill</button>
                   </div>
                 </div>
                 <div class="card mb-4">
@@ -212,7 +213,9 @@
 
           <!-- right billing contents  -->
           <div class="padding-content bill-panel bg-white" id="bill-panel">
-            <div class="d-md-none light-btn"></div>
+            <a data-toggle="offbill">
+              <div class="d-lg-none light-btn"></div>
+            </a>
             <div class="card-cashier">
               <div class="thumb-cashier">
                 <div class="row no-gutters">

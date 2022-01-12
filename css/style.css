@@ -11281,6 +11281,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
   
   .bill-panel {
+    z-index: 2;
     width: 100%;
     display: none;
     box-shadow: rgba(149, 157, 165, 1) 0px 8px 24px;
@@ -11297,6 +11298,10 @@ a.text-dark:hover, a.text-dark:focus {
     margin-top: 35px;
     box-shadow: rgba(145, 93, 78, 0.137) 0px 3px 8px !important;
   }
+
+  .menu-container{
+    margin-bottom: 100px
+  }
 }
 
 .light-btn {
@@ -11305,6 +11310,22 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bill-panel::-webkit-scrollbar {
   display: none;
+}
+
+.btn-cashier {
+  z-index: 1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5%;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .card-cashier {
@@ -12293,7 +12314,7 @@ code {
 
 @media (max-width: 768px) {
   .padding-content {
-    padding: 5%;
+    padding: 7%;
   }
 }
 

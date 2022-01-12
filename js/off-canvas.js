@@ -17,3 +17,9 @@ $(function () {
     $('.sidebar-offcanvas').toggleClass('active')
   });
 });
+
+$(function () {
+  $('[data-toggle="offbill"]').on("click", function () {
+    $('.bill-panel').toggleClass('active')
+  });
+});
