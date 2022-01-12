@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Arshen Dashboard</title>
+
+  <!-- CSS Plugin -->
+  <link rel="stylesheet" href="vendors/datatables-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+
+  <!-- font poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- style css  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- icon website-->
+  <link rel="shortcut icon" href="" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper">
+
+      <div class="main-panel">
+        <div class="content-wrapper inline-view">
+          <!-- main content  -->
+          <div class="padding-content main-content-panel bg-grey-soft">
+            <div class="row">
+              <div class="col-lg-6 mb-2">
+                <h3 class="font-weight-bold vcenter">Choose Category</h3>
+              </div>
+              <div class="col-lg-6 mb-2">
+                <input class="search_input" type="text" placeholder="Search Category or Menu">
+              </div>
+            </div>
+            <div class="">
+              <div class="hr-content"></div>
+            </div>
+            <div class="category">
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  All
+                </span>
+              </a>
+              <a href="#" class="category-link active">
+                <span class="title-category">
+                  Coffee
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Juice
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Snack
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Food
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Beans
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Bundles
+                </span>
+              </a>
+              <a href="#" class="category-link">
+                <span class="title-category">
+                  Merchant
+                </span>
+              </a>
+            </div>
+
+            <div class="menu-container">
+              <p>
+                <span class="menu-title text-coffee">Coffee Menu</span>
+                <span class="indicator-menu-title">5 Coffees Results</span>
+              </p>
+              <div class="card-columns card-menu">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div class='thumb-menu'>
+                      <img class="img-menu"
+                        src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                      <div class="thumb-text">
+                        <div class="title-menu">Hot Arabica Coffee</div>
+                        <div class="description-menu">Lorem ipsum dolor sit amet consectetur elit.</div>
+                        <div class="price-menu text-coffee">IDR 15K</div>
+                      </div>
+                    </div>
+                    <div class="type-menu">
+                      <div class="row no-gutters">
+                        <div class="col-md-6 mb-4">
+                          <h6><b>Type</b></h6>
+                          <input class="check-type" type="radio" id="hot" name="type" checked>
+                          <label class="list-type" for="hot">Hot</label>
+                          <input class="check-type" type="radio" id="ice" name="type">
+                          <label class="list-type" for="ice">Ice</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <h6><b>Size</b></h6>
+                          <input class="check-type" type="radio" id="s" name="size">
+                          <label class="list-type" for="s">S</label>
+                          <input class="check-type" type="radio" id="m" name="size" checked>
+                          <label class="list-type" for="m">M</label>
+                          <input class="check-type" type="radio" id="l" name="size">
+                          <label class="list-type" for="l">L</label>
+                        </div>
+                        <div class="col-md-12">
+                          <h6><b>Sugar</b></h6>
+                          <input class="check-type-2" type="radio" id="less" name="sugar">
+                          <label class="list-type-2" for="less">less sugar</label>
+                          <input class="check-type-2" type="radio" id="medium" name="sugar" checked>
+                          <label class="list-type-2" for="medium">medium</label>
+                          <input class="check-type-2" type="radio" id="sweet" name="sugar">
+                          <label class="list-type-2" for="sweet">sweetness</label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary btn-block mt-3">Add to Bill</button>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div class='thumb-menu'>
+                      <img class="img-menu"
+                        src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                      <div class="thumb-text">
+                        <div class="title-menu">V60 Robusta</div>
+                        <div class="description-menu">Lorem ipsum dolor sit amet consectetur elit.</div>
+                        <div class="price-menu text-coffee">IDR 15K</div>
+                      </div>
+                    </div>
+                    <button class="btn btn-secondary btn-block mt-5"><b>View Detail</b></button>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div class='thumb-menu'>
+                      <img class="img-menu"
+                        src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                      <div class="thumb-text">
+                        <div class="title-menu">Americano Arabica</div>
+                        <div class="description-menu">Lorem ipsum dolor sit amet consectetur elit.</div>
+                        <div class="price-menu text-coffee">IDR 15K</div>
+                      </div>
+                    </div>
+                    <button class="btn btn-secondary btn-block mt-5"><b>View Detail</b></button>
+                  </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <div class='thumb-menu'>
+                      <img class="img-menu"
+                        src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                      <div class="thumb-text">
+                        <div class="title-menu">Cappucino Latte</div>
+                        <div class="description-menu">Lorem ipsum dolor sit amet consectetur elit.</div>
+                        <div class="price-menu text-coffee">IDR 15K</div>
+                      </div>
+                    </div>
+                    <div class="type-menu">
+                      <div class="row no-gutters">
+                        <div class="col-md-6 mb-4">
+                          <h6><b>Type</b></h6>
+                          <input class="check-type" type="radio" id="hot1" name="type1">
+                          <label class="list-type" for="hot1">Hot</label>
+                          <input class="check-type" type="radio" id="ice1" name="type1">
+                          <label class="list-type" for="ice1">Ice</label>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                          <h6><b>Size</b></h6>
+                          <input class="check-type" type="radio" id="s1" name="size1">
+                          <label class="list-type" for="s1">S</label>
+                          <input class="check-type" type="radio" id="m1" name="size1">
+                          <label class="list-type" for="m1">M</label>
+                          <input class="check-type" type="radio" id="l1" name="size1">
+                          <label class="list-type" for="l1">L</label>
+                        </div>
+                        <div class="col-md-12">
+                          <h6><b>Sugar</b></h6>
+                          <input class="check-type-2" type="radio" id="less1" name="sugar1">
+                          <label class="list-type-2" for="less1">less sugar</label>
+                          <input class="check-type-2" type="radio" id="medium1" name="sugar1">
+                          <label class="list-type-2" for="medium1">medium</label>
+                          <input class="check-type-2" type="radio" id="sweet1" name="sugar1">
+                          <label class="list-type-2" for="sweet1">sweetness</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end main-content  -->
+
+          <!-- right billing contents  -->
+          <div class="padding-content bill-panel bg-white" id="bill-panel">
+            <div class="d-md-none light-btn"></div>
+            <div class="card-cashier">
+              <div class="thumb-cashier">
+                <div class="row no-gutters">
+                  <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
+                  <div class="text-cashier">
+                    <p class="text-coffee">I'm Cashier ☕</p>
+                    <h5><b>Magfira Fitria</b></h5>
+                  </div>
+                  <div class="notif-cashier">
+                    <a class="count-indicator dropdown-toggle" id="notification" href="#" data-toggle="dropdown">
+                      <i class="icon-bell mx-0"></i>
+                      <span class="count"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                      aria-labelledby="notification">
+                      <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                      <a class="dropdown-item">
+                        -
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="bills-list">
+              <p class="bill-title text-coffee">Orders</p>
+              <div class="order-list">
+                <div class='thumb-bill'>
+                  <img class="img-bill"
+                    src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                  <div class="text-bill">
+                    <div class="title-order">Hot Arabica Coffee</div>
+                    <div class="description-order">
+                      x&nbsp;<b>1</b>
+                      <span>
+                        <a href="#" class="bill-notes-btn">
+                          notes&nbsp;&nbsp;<i class="ti ti-pencil"></i>
+                        </a>
+                      </span>
+                      <span class="price-bill">Rp. 15.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-list">
+                <div class='thumb-bill'>
+                  <img class="img-bill"
+                    src="https://www.torani.com/sites/default/files/2021-11/Hot%20Coffees%402x_134.jpg" alt="">
+                  <div class="text-bill">
+                    <div class="title-order">Cappucino Latte</div>
+                    <div class="description-order">
+                      x&nbsp;<b>1</b>
+                      <span>
+                        <a href="#" class="bill-notes-btn">
+                          notes&nbsp;&nbsp;<i class="ti ti-pencil"></i>
+                        </a>
+                      </span>
+                      <span class="price-bill">Rp. 12.000</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="total-bill">
+                <p>
+                  <b>Subtotal</b>
+                  <span class="price-bill text-success"><b>Rp. 27.000</b></span>
+                </p>
+                <p>
+                  Discount(10%)
+                  <span class="price-bill text-danger">- Rp. 2.700</span>
+                </p>
+                <div class="dashed-bill"></div>
+                <h5>
+                  <b>Total</b>
+                  <span class="price-bill"><b>Rp. 24.300</b></span>
+                </h5>
+              </div>
+              <div class="payment-container">
+                <p class="payment-text mt-4">Payment Method</p>
+                <div class="row">
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="payment-link active">
+                      <span class="icon-payment">
+                        <i class="ti ti-wallet"></i>
+                      </span>
+                      <br />
+                      <span class="title-payment">
+                        Cash
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="payment-link">
+                      <span class="icon-payment">
+                        <i class="ti ti-credit-card"></i>
+                      </span>
+                      <br />
+                      <span class="title-payment">
+                        Debit
+                      </span>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <a href="#" class="payment-link">
+                      <span class="icon-payment">
+                        <i class="ti ti-soundcloud"></i>
+                      </span>
+                      <br />
+                      <span class="title-payment">
+                        E-Wallet
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <a class="btn btn-primary btn-bill">Prints Bills</a>
+              </div>
+            </div>
+          </div>
+          <!-- end billing contents  -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- JS Plugin -->
+  <script src="vendors/jquery/jquery.js"></script>
+  <script src="vendors/chart/Chart.min.js"></script>
+  <script src="vendors/datatables/jquery.dataTables.js"></script>
+  <script src="vendors/datatables-bs4/dataTables.bootstrap4.js"></script>
+
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <!-- endinject -->
+
+  <!-- Custom js for this page-->
+  <script src="js/dashboard.js"></script>
+  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="js/category-drag.js"></script>
+  <script src="js/bill-drag-scroll.js"></script>
+  <script src="js/content-drag-scroll.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
