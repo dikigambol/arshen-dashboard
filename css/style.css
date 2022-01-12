@@ -11304,8 +11304,29 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (min-width: 1024px) {
+  .lg-above-none {
+    display: none;
+  }
+}
+
+.close-btn-bill {
+  width: 100%; 
+  background: white; 
+  padding: 5%; 
+  border-top-left-radius: 30px; 
+  border-top-right-radius: 30px; 
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 3;
+}
+
 .light-btn {
-  height: 7px; background-color: rgb(226, 226, 226); width: 30%; border-radius: 30px; margin: auto;
+  height: 7px; 
+  background-color: rgb(226, 226, 226); 
+  width: 30%; 
+  border-radius: 30px; 
+  margin: auto;
 }
 
 .bill-panel::-webkit-scrollbar {
@@ -11498,7 +11519,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .title-payment {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .hr-content {
@@ -12312,7 +12333,7 @@ code {
   padding: 3%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .padding-content {
     padding: 7%;
   }
