@@ -11313,7 +11313,7 @@ a.text-dark:hover, a.text-dark:focus {
 .close-btn-bill {
   width: 100%; 
   background: white; 
-  padding: 5%; 
+  padding: 7%; 
   border-top-left-radius: 30px; 
   border-top-right-radius: 30px; 
   position: fixed;
@@ -12335,7 +12335,7 @@ code {
 
 @media (max-width: 1023px) {
   .padding-content {
-    padding: 7%;
+    padding: 8.5%;
   }
 }
 
