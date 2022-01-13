@@ -19,20 +19,52 @@
 
   <!-- style css  -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/customize.css">
 
   <!-- icon website-->
   <link rel="shortcut icon" href="" />
 </head>
 
-<body>
+<body class="sidebar-icon-only">
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper">
+
+      <!-- sidebar  -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="icon-layout menu-icon"></i>
+              <span class="menu-title">ini menu</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- end sidebar  -->
+
       <div class="main-panel">
+
+        <!-- btn cashier  -->
         <div class="btn-cashier lg-above-none">
           <a class="btn btn-primary btn-block" data-toggle="offbill"><i
-              class="ti ti-shopping-cart"></i>&nbsp;&nbsp;cashier : 2 items</a>
+              class="ti ti-shopping-cart"></i>&nbsp;&nbsp;checkout : 2 items</a>
         </div>
+        <!-- end btn-cashier  -->
+
         <div class="content-wrapper inline-view">
+
           <!-- main content  -->
           <div class="padding-content main-content-panel bg-grey-soft">
             <div class="row">
@@ -87,10 +119,35 @@
               </a>
             </div>
 
+            <div class="card-cashier lg-above-none">
+              <div class="thumb-cashier">
+                <div class="row no-gutters">
+                  <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
+                  <div class="text-cashier">
+                    <p class="text-coffee">I'm Cashier ☕</p>
+                    <h5><b>Magfira Fitria</b></h5>
+                  </div>
+                  <div class="notif-cashier">
+                    <a class="count-indicator dropdown-toggle" id="notification" href="#" data-toggle="dropdown">
+                      <i class="icon-bell mx-0"></i>
+                      <span class="count"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                      aria-labelledby="notification">
+                      <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                      <a class="dropdown-item">
+                        -
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="menu-container">
               <p>
-                <span class="menu-title text-coffee">Coffee Menu</span>
-                <span class="indicator-menu-title">5 Coffees Results</span>
+                <span class="menu-title-coffee text-coffee">Coffee Menu</span>
+                <span class="indicator-menu-title">4 Coffees Results</span>
               </p>
               <div class="card-columns card-menu">
                 <div class="card mb-4">
@@ -218,7 +275,7 @@
                 <div class="light-btn"></div>
               </div>
             </a>
-            <div class="card-cashier">
+            <div class="card-cashier sm-above-none">
               <div class="thumb-cashier">
                 <div class="row no-gutters">
                   <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
