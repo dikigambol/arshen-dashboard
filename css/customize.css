@@ -255,6 +255,7 @@
     border-radius: 15px;
     padding: 10%;
     text-align: center;
+    border: 1.8px solid white;
 }
 
 .payment-link:hover {
