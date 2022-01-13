@@ -21,5 +21,6 @@ $(function () {
 $(function () {
   $('[data-toggle="offbill"]').on("click", function () {
     $('.bill-panel').toggleClass('active')
+    $('.main-content-panel').toggleClass('hide')
   });
 });

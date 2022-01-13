@@ -20616,7 +20616,7 @@ div.tagsinput span.tag a {
 }
 
 .content-wrapper {
-  background: white;
+  background: rgb(226, 226, 226);
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1;

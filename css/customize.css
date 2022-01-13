@@ -1,17 +1,26 @@
 /* customize area  */
+.hide {
+    display: none;
+}
+
 .inline-view {
     display: flex;
     flex-wrap: wrap;
 }
 
+.burger-btn-menu {
+    position: absolute; 
+    right: 0; 
+    top: 3px; 
+    z-index: 2;
+}
+
 .main-content-panel {
-    /* border: 1px solid black; */
     width: 69%
 }
 
 .bill-panel {
     width: 28.73%;
-    /* border: 1px solid black; */
     position: fixed;
     overflow-y: scroll;
     right: 0;
@@ -36,15 +45,13 @@
 
     .bill-panel {
         z-index: 2;
-        width: 100%;
-        display: none;
-        box-shadow: rgba(99, 99, 99, 0.24) 0px 3px 24px;
         border-top-left-radius: 50px;
         border-top-right-radius: 50px;
+        width: 100%;
+        display: none;
     }
 
     .bill-panel.active {
-        width: 100%;
         display: block;
     }
 
