@@ -3463,7 +3463,7 @@ input[type="button"].btn-block {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1.5rem;
+  /* padding: 0.25rem 1.5rem; */
   clear: both;
   font-weight: 400;
   color: #1F1F1F;
@@ -14728,7 +14728,7 @@ code {
 
 .dropdown .dropdown-menu .dropdown-item {
   font-size: .875rem;
-  padding: .25rem 1.5rem;
+  /* padding: .25rem 1.5rem; */
 }
 
 .dropdown .dropdown-menu .dropdown-item:active {
@@ -20684,6 +20684,14 @@ div.tagsinput span.tag a {
   color: #6C7383;
 }
 
+.sidebar .nav .nav-item .nav-link[aria-expanded="true"] i.white-icon {
+  color: #fff;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-icon:focus {
+  color: white;
+}
+
 .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
   margin-left: 2rem;
   margin-right: 0;
@@ -20793,7 +20801,7 @@ div.tagsinput span.tag a {
 .sidebar .nav:not(.sub-menu)>.nav-item>.nav-link[aria-expanded="true"] {
   border-radius: 15px 15px 0 0;
   background: #704232;
-  color: #fff;
+  color: #fff !important;
 }
 
 .sidebar .nav:not(.sub-menu)>.nav-item.active {
@@ -20806,7 +20814,7 @@ div.tagsinput span.tag a {
   list-style: none;
   padding: 0.5rem 0 .5rem 2.9rem;
   background: #704232;
-  border-radius: 0px 0 15px 15px;
+  border-radius: 0 0 15px 15px;
 }
 
 .sidebar .nav.sub-menu .nav-item {
@@ -22057,7 +22065,6 @@ div.tagsinput span.tag a {
 
   .sidebar-icon-only .main-panel {
     width: calc(100% - 100px);
-    /* border: 1px solid red; */
   }
 
   .sidebar-icon-only .sidebar .nav {

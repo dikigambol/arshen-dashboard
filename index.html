@@ -28,9 +28,9 @@
 <body class="sidebar-icon-only">
   <div class="container-scroller">
     <div class="container-fluid page-body-wrapper">
-
       <!-- sidebar  -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <img class="sm-to-md-none img-nav" src="images/logo-mini.svg" alt="">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
@@ -40,9 +40,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="icon-layout menu-icon"></i>
-              <span class="menu-title">ini menu</span>
-              <i class="menu-arrow"></i>
+              <i class="icon-layout menu-icon white-icon"></i>
+              <span class="menu-title">UI Component</span>
+              <i class="menu-arrow white-icon"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
@@ -53,28 +53,25 @@
         </ul>
       </nav>
       <!-- end sidebar  -->
-
       <div class="main-panel">
-
         <!-- btn cashier  -->
         <div class="btn-cashier lg-above-none">
           <a class="btn btn-primary btn-block" data-toggle="offbill"><i
-              class="ti ti-shopping-cart"></i>&nbsp;&nbsp;checkout : 2 items</a>
+              class="ti ti-shopping-cart"></i>&nbsp;&nbsp;checkout : 2 items
+          </a>
         </div>
         <!-- end btn-cashier  -->
-
         <div class="content-wrapper inline-view">
-
           <!-- main content  -->
           <div class="padding-content main-content-panel bg-grey-soft">
             <div class="row">
-              <div class="col-lg-6 mb-2">
+              <div class="col-xl-6 mb-2">
                 <h3 class="font-weight-bold vcenter">Choose Category</h3>
-                <button class="navbar-toggler burger-btn-menu d-lg-none" type="button" data-toggle="offcanvas">
+                <button class="navbar-toggler burger-btn-menu d-xl-none" type="button" data-toggle="offcanvas">
                   <span class="icon-menu"></span>
                 </button>
               </div>
-              <div class="col-lg-6 mb-2">
+              <div class="col-xl-6 mb-2">
                 <input class="search_input" type="text" placeholder="Search Category or Menu">
               </div>
             </div>
@@ -122,29 +119,9 @@
               </a>
             </div>
 
-            <div class="card-cashier lg-above-none">
-              <div class="thumb-cashier">
-                <div class="row no-gutters">
-                  <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
-                  <div class="text-cashier">
-                    <p class="text-coffee">I'm Cashier ☕</p>
-                    <h5><b>Magfira Fitria</b></h5>
-                  </div>
-                  <div class="notif-cashier">
-                    <a class="count-indicator dropdown-toggle" id="notification" href="#" data-toggle="dropdown">
-                      <i class="icon-bell mx-0"></i>
-                      <span class="count"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                      aria-labelledby="notification">
-                      <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-                      <a class="dropdown-item">
-                        -
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <!-- mobile card cashier  -->
+            <div class="lg-above-none">
+              <div class="card-cashier-mobile"></div>
             </div>
 
             <div class="menu-container">
@@ -270,7 +247,6 @@
             </div>
           </div>
           <!-- end main-content  -->
-
           <!-- right billing contents  -->
           <div class="padding-content bill-panel bg-white" id="bill-panel">
             <a data-toggle="offbill" class="lg-above-none">
@@ -278,25 +254,42 @@
                 <div class="light-btn"></div>
               </div>
             </a>
-            <div class="card-cashier sm-above-none">
-              <div class="thumb-cashier">
-                <div class="row no-gutters">
-                  <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
-                  <div class="text-cashier">
-                    <p class="text-coffee">I'm Cashier ☕</p>
-                    <h5><b>Magfira Fitria</b></h5>
-                  </div>
-                  <div class="notif-cashier">
-                    <a class="count-indicator dropdown-toggle" id="notification" href="#" data-toggle="dropdown">
-                      <i class="icon-bell mx-0"></i>
-                      <span class="count"></span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-                      aria-labelledby="notification">
-                      <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-                      <a class="dropdown-item">
-                        -
+            <!-- desktop card cashier  -->
+            <div class="card-cashier-desktop sm-above-none">
+              <div class="card-cashier">
+                <div class="thumb-cashier">
+                  <div class="row no-gutters">
+                    <li class="nav-item nav-profile dropdown" style="list-style-type: none;">
+                      <a href="#" data-toggle="dropdown" id="profileDropdown">
+                        <img class="img-cashier" src="images/faces/avatar.jpg" alt="">
                       </a>
+                      <div class="dropdown-menu navbar-dropdown mt-4" aria-labelledby="profileDropdown">
+                        <a class="dropdown-item">
+                          <span class="ti-user profile-menu"></span>
+                          Profile
+                        </a>
+                        <a class="dropdown-item">
+                          <span class="ti-power-off profile-menu"></span>
+                          Logout
+                        </a>
+                      </div>
+                    </li>
+                    <div class="text-cashier">
+                      <p class="text-coffee">I'm Cashier ☕</p>
+                      <h5><b>Magfira Fitria</b></h5>
+                    </div>
+                    <div class="notif-cashier">
+                      <a class="count-indicator dropdown-toggle" id="notification" href="#" data-toggle="dropdown">
+                        <i class="icon-bell mx-0"></i>
+                        <span class="count"></span>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                        aria-labelledby="notification">
+                        <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                        <a class="dropdown-item">
+                          -
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -399,34 +392,32 @@
             </div>
           </div>
           <!-- end billing contents  -->
-
         </div>
       </div>
     </div>
   </div>
-  </div>
-
-  <!-- JS Plugin -->
-  <script src="vendors/jquery/jquery.js"></script>
-  <script src="vendors/chart/Chart.min.js"></script>
-  <script src="vendors/datatables/jquery.dataTables.js"></script>
-  <script src="vendors/datatables-bs4/dataTables.bootstrap4.js"></script>
-
-  <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
-  <!-- endinject -->
-
-  <!-- Custom js for this page-->
-  <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
-  <script src="js/category-drag.js"></script>
-  <script src="js/bill-drag-scroll.js"></script>
-  <script src="js/content-drag-scroll.js"></script>
-  <!-- End custom js for this page-->
 </body>
+
+<!-- JS Plugin -->
+<script src="vendors/jquery/jquery.js"></script>
+<script src="vendors/chart/Chart.min.js"></script>
+<script src="vendors/datatables/jquery.dataTables.js"></script>
+<script src="vendors/datatables-bs4/dataTables.bootstrap4.js"></script>
+
+<!-- inject:js -->
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/template.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/todolist.js"></script>
+<!-- endinject -->
+
+<!-- Custom js for this page-->
+<script src="js/dashboard.js"></script>
+<script src="js/Chart.roundedBarCharts.js"></script>
+<script src="js/category-drag.js"></script>
+<script src="js/bill-drag-scroll.js"></script>
+<script src="js/content-drag-scroll.js"></script>
+<!-- End custom js for this page-->
 
 </html>

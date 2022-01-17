@@ -24,3 +24,15 @@ $(function () {
     $('.main-content-panel').toggleClass('hide')
   });
 });
+
+$(window).bind('scroll', function () {
+  if ($(window).scrollTop() > 80) {
+    $('.logout-btn').hide();
+  }
+  else {
+    $('.logout-btn').show();
+  }
+});
+
+var content = $('.card-cashier-desktop').html(); 
+$(".card-cashier-mobile").after(content).appendTo("body");
