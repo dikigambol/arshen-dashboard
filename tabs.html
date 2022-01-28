@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Arshen Dashboard</title>
+
+    <!-- CSS Plugin -->
+    <link rel="stylesheet" href="vendors/datatables-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/feather/feather.css">
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customize.css">
+
+    <!-- icon website-->
+    <link rel="shortcut icon" href="" />
+</head>
+
+<body class="sidebar-icon-only">
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
+            <!-- sidebar  -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <img class="sm-to-md-none img-nav" src="images/logo-mini.svg" alt="">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon white-icon"></i>
+                            <span class="menu-title">UI Element</span>
+                            <i class="menu-arrow white-icon"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="widget.html">
+                                        Widget
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="accordion.html">
+                                        Accordion
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tabs.html">
+                                        Tab & Pill
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="buttons.html">
+                                        Button
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="badge.html">
+                                        Badge
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="progress.html">
+                                        Progressbar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="typography.html">
+                                        Typography
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="breadcrumb.html">
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="form.html">
+                            <i class="icon-columns menu-icon"></i>
+                            <span class="menu-title">Form</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">
+                            <i class="icon-grid-2 menu-icon"></i>
+                            <span class="menu-title">Table</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chart.html">
+                            <i class="icon-bar-graph menu-icon"></i>
+                            <span class="menu-title">Chart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="alert.html">
+                            <i class="ti-announcement menu-icon"></i>
+                            <span class="menu-title">Alert</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="icon.html">
+                            <i class="ti-heart menu-icon"></i>
+                            <span class="menu-title">Icon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.html">
+                            <i class="ti-calendar menu-icon"></i>
+                            <span class="menu-title">Calendar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic-2" aria-expanded="false"
+                            aria-controls="ui-basic-2">
+                            <i class="ti-user menu-icon white-icon"></i>
+                            <span class="menu-title">User Pages</span>
+                            <i class="menu-arrow white-icon"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic-2">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="login.html">
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="register.html">
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end sidebar  -->
+            <div class="main-panel">
+                <div class="content-wrapper padding-content">
+                    <div class="row">
+                        <div class="col-xl-12 mb-3">
+                            <h3 class="font-weight-bold vcenter">Tabs & Pills</h3>
+                            <button class="navbar-toggler burger-btn-menu d-xl-none" type="button"
+                                data-toggle="offcanvas">
+                                <span class="icon-menu"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Basic Tabs</h4>
+                                    <p class="card-description">Horizontal bootstrap</p>
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="1" data-toggle="tab" href="#basic1"
+                                                role="tab" aria-controls="1" aria-selected="true">tabs 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#basic2"
+                                                role="tab" aria-controls="2" aria-selected="false">tabs 2</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="basic1" role="tabpanel"
+                                            aria-labelledby="home-tab">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                                        Temporibus, omnis obcaecati repudiandae magni perferendis at.
+                                                        Ipsum accusamus doloribus doloremque, enim labore quidem tempore
+                                                        dicta repellat modi quaerat. Culpa, id iure!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="basic2" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <p>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Laboriosam incidunt aliquid reprehenderit deleniti error?
+                                                        Consectetur fugiat exercitationem quo beatae nesciunt, iure
+                                                        dolore maiores labore aut eius vel veniam reiciendis modi.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 grid-margin d-none d-md-flex">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vertical Tabs</h4>
+                                    <p class="card-description">To use add class <code>.nav-tabs-vertical</code> to
+                                        <code>.nav</code> and
+                                        <code>.tab-content-vertical</code> to <code>.tab-content</code>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <ul class="nav nav-tabs nav-tabs-vertical" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="home-tab-vertical" data-toggle="tab"
+                                                        href="#vertical1" role="tab" aria-controls="vertical1"
+                                                        aria-selected="true">
+                                                        tabs 1
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="profile-tab-vertical" data-toggle="tab"
+                                                        href="#vertical2" role="tab" aria-controls="vertical2"
+                                                        aria-selected="false">
+                                                        tabs 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="tab-content tab-content-vertical">
+                                                <div class="tab-pane fade show active" id="vertical1" role="tabpanel"
+                                                    aria-labelledby="home-tab-vertical">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                                        cupiditate saepe nesciunt nobis neque incidunt voluptatum sint
+                                                        aspernatur error illo, ullam perspiciatis in optio omnis
+                                                        assumenda porro blanditiis vero ea.
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="vertical2" role="tabpanel"
+                                                    aria-labelledby="profile-tab-vertical">
+                                                    <p>
+                                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                                                        porro vel facere, eligendi, cupiditate eaque beatae qui est unde
+                                                        ab harum, at enim nesciunt! Nihil maiores soluta totam facere.
+                                                        Incidunt.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pills</h4>
+                                    <p class="card-description">Basic bootstrap pills</p>
+                                    <ul class="nav nav-pills pills" id="pills-tab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" id="pills-1-tab" data-toggle="pill"
+                                                href="#pills-1" role="tab" aria-controls="pills-1"
+                                                aria-selected="true">tabs 1</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" id="pills-2-tab" data-toggle="pill" href="#pills-2"
+                                                role="tab" aria-controls="pills-2" aria-selected="false">tabs 2</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content pills" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                            aria-labelledby="pills-1-tab">
+                                            <div class="media">
+                                                <div class="media-body">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Perferendis non sit tempore praesentium fugiat unde ipsa,
+                                                        distinctio earum laborum quaerat voluptate atque libero.
+                                                        Praesentium sapiente sint quisquam perferendis! Quam, harum.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-2" role="tabpanel"
+                                            aria-labelledby="pills-2-tab">
+                                            <div class="media">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                                                    itaque dolorum inventore neque nemo voluptas beatae tenetur
+                                                    asperiores! Fugit, dicta sunt! Sunt id mollitia quos optio
+                                                    asperiores sapiente beatae fuga.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 grid-margin d-none d-md-flex">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Vertical Pills</h4>
+                                    <p class="card-description">To use add class <code>.nav-pills-vertical</code> in
+                                        <code>.nav</code> and
+                                        <code>.tab-content-vertical</code> in <code>.tab-content</code>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <ul class="nav nav-pills nav-pills-vertical" id="v-pills-tab" role="tablist"
+                                                aria-orientation="vertical">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="v-pills-1-tab" data-toggle="pill"
+                                                        href="#v-pills-1" role="tab" aria-controls="v-pills-1"
+                                                        aria-selected="true">
+                                                        tabs 1
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="v-pills-2-tab" data-toggle="pill"
+                                                        href="#v-pills-2" role="tab" aria-controls="v-pills-2"
+                                                        aria-selected="false">
+                                                        tabs 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="tab-content tab-content-vertical" id="v-pills-tabContent">
+                                                <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                                                    aria-labelledby="v-pills-1-tab">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p>
+                                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Exercitationem quod quibusdam molestiae eos eligendi ex
+                                                                harum, voluptates consectetur soluta quae sequi atque
+                                                                natus
+                                                                culpa labore eveniet vitae nam, possimus accusantium?
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-2" role="tabpanel"
+                                                    aria-labelledby="v-pills-2-tab">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p>
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                                elit.
+                                                                Possimus earum placeat, inventore hic ullam repudiandae
+                                                                fugit saepe optio quaerat minima itaque iusto
+                                                                exercitationem
+                                                                maiores laborum facilis illum fuga architecto harum.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Customize pills</h4>
+                                    <p class="card-description">To use add class <code>.nav-pills-custom</code> and
+                                        <code>.tab-content-custom-pill</code> in <code>.nav-pills</code> and
+                                        <code>.tab-content</code>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <ul class="nav nav-pills nav-pills-custom" id="pills-tab-custom"
+                                                role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-1-tab-custom"
+                                                        data-toggle="pill" href="#pills-1-custom" role="tab"
+                                                        aria-controls="pills-1" aria-selected="true">
+                                                        tabs 1
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-2-tab-custom" data-toggle="pill"
+                                                        href="#pills-2-custom" role="tab" aria-controls="pills-profile"
+                                                        aria-selected="false">
+                                                        tabs 2
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <div class="tab-content tab-content-custom-pill"
+                                                id="pills-tabContent-custom">
+                                                <div class="tab-pane fade show active" id="pills-1-custom"
+                                                    role="tabpanel" aria-labelledby="pills-1-tab-custom">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                                                        tenetur, iure mollitia laboriosam aperiam laborum illo quas
+                                                        facilis
+                                                        et exercitationem nulla dolorem repudiandae, ipsum, odit
+                                                        necessitatibus dolores cumque libero quisquam?
+                                                    </p>
+                                                </div>
+                                                <div class="tab-pane fade" id="pills-2-custom" role="tabpanel"
+                                                    aria-labelledby="pills-2-tab-custom">
+                                                    <div class="media">
+                                                        <div class="media-body">
+                                                            <p>
+                                                                Lorem ipsum dolor, sit amet consectetur adipisicing
+                                                                elit.
+                                                                Fugiat, veniam dolorem sint quaerat ipsa facilis ea
+                                                                suscipit
+                                                                ullam et consequuntur nulla consequatur dolore quia ut
+                                                                nesciunt distinctio eligendi! Reiciendis, esse.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<!-- Vendors -->
+<script src="vendors/jquery/jquery.min.js"></script>
+
+<!-- inject:js -->
+<script src="js/off-canvas.js"></script>
+<script src="js/hoverable-collapse.js"></script>
+<script src="js/active-menu.js"></script>
+<!-- endinject -->
+
+</html>

@@ -1,7 +1,13 @@
-(function($) {
+(function ($) {
   'use strict';
-  $(function() {
+  $(function () {
     var sidebar = $('.sidebar');
+
+    var current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
+    $('.nav li a', sidebar).each(function () {
+      var $this = $(this);
+      addActiveClass($this);
+    })
 
     function addActiveClass(element) {
       if (current === "") {
@@ -26,18 +32,7 @@
       }
     }
 
-    var current = location.pathname.split("/").slice(-1)[0].replace(/^\/|\/$/g, '');
-    $('.nav li a', sidebar).each(function() {
-      var $this = $(this);
-      addActiveClass($this);
-    })
-
-    $('.horizontal-menu .nav li a').each(function() {
-      var $this = $(this);
-      addActiveClass($this);
-    })
-
-    sidebar.on('show.bs.collapse', '.collapse', function() {
+    sidebar.on('show.bs.collapse', '.collapse', function () {
       sidebar.find('.collapse.show').collapse('hide');
     });
 
@@ -46,8 +41,8 @@
   });
 
   // focus input when clicking on search icon
-  $('#navbar-search-icon').click(function() {
+  $('#navbar-search-icon').click(function () {
     $("#navbar-search-input").focus();
   });
-  
+
 })(jQuery);
