@@ -34,7 +34,7 @@
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../../index.html">
-                            <i class="icon-grid menu-icon"></i>
+                            <i class="ti-home menu-icon"></i>
                             <span class="menu-title">Home</span>
                         </a>
                     </li>
@@ -163,66 +163,103 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-3 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Todays Income</h4>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Total</p>
-                                        <p class="text-muted">30.000</p>
+                        <div class="col-md-6  grid-margin">
+                            <div class="card p-4">
+                                <div class="d-flex">
+                                    <h4 class="flex-grow-1" id="weather-location">Malang</h4>
+                                    <h4 id="weather-time">10:46</h4>
+                                </div>
+                                <div class="d-flex flex-column temp mt-5 mb-3">
+                                    <h1 class="mb-0 font-weight-bold text-primary" id="weather-temp">13° C</h1>
+                                    <p class="text-secondary" id="weather-text">partly cloudy</p>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="temp-details flex-grow-1">
+                                        <p class="my-1">
+                                            <img src="https://i.imgur.com/B9kqOzp.png" height="16px">
+                                            &nbsp;&nbsp;<span id="weather-kmph">13 km/h</span>
+                                        </p>
+                                        <p class="my-1">
+                                            <i class="ti-cloud mr-2" aria-hidden="true"></i>
+                                            <span id="weather-cloud">12</span>
+                                        </p>
+                                        <p class="my-1">
+                                            <img src="https://i.imgur.com/wGSJ8C5.png" height="16px">
+                                            &nbsp;&nbsp;<span id="weather-sun">13h</span>
+                                        </p>
                                     </div>
-                                    <div class="progress progress-md">
-                                        <div class="progress-bar bg-info w-25" role="progressbar" aria-valuenow="25"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div>
+                                        <img src="https://i.imgur.com/Qw7npIg.png" id="weather-icon" width="100px">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Total Revenue</h4>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Total</p>
-                                        <p class="text-muted">3.000.000</p>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6 grid-margin">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Todays Income</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-muted">Total</p>
+                                                <p class="text-muted">30.000</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                                <div class="progress-bar bg-info w-25" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="progress progress-md">
-                                        <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                <div class="col-md-6 grid-margin">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Total Revenue</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-muted">Total</p>
+                                                <p class="text-muted">3.000.000</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                                <div class="progress-bar bg-success w-25" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 grid-margin">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Todays Outcome</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-muted">Total</p>
+                                                <p class="text-muted">10.000</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                                <div class="progress-bar bg-danger w-25" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 grid-margin">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Sales</h4>
+                                            <div class="d-flex justify-content-between">
+                                                <p class="text-muted">Total Product</p>
+                                                <p class="text-muted">143</p>
+                                            </div>
+                                            <div class="progress progress-md">
+                                                <div class="progress-bar bg-warning w-25" role="progressbar"
+                                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Todays Outcome</h4>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Total</p>
-                                        <p class="text-muted">10.000</p>
-                                    </div>
-                                    <div class="progress progress-md">
-                                        <div class="progress-bar bg-danger w-25" role="progressbar" aria-valuenow="25"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 grid-margin">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="card-title">Sales</h4>
-                                    <div class="d-flex justify-content-between">
-                                        <p class="text-muted">Total Product</p>
-                                        <p class="text-muted">143</p>
-                                    </div>
-                                    <div class="progress progress-md">
-                                        <div class="progress-bar bg-warning w-25" role="progressbar" aria-valuenow="25"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4 grid-margin">
                             <div class="card bg-cappucino d-flex align-items-center">
                                 <div class="card-body">
@@ -335,6 +372,7 @@
 <script src="../../assets/js/off-canvas.js"></script>
 <script src="../../assets/js/hoverable-collapse.js"></script>
 <script src="../../assets/js/active-menu.js"></script>
+<script src="../../assets/js/weather.js"></script>
 <!-- endinject -->
 
 </html>

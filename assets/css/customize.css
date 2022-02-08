@@ -1403,3 +1403,21 @@
 .dataTables_wrapper .dataTable {
     padding: 0.1rem 0.2rem !important;
 }
+
+#weather-temp {
+    font-size: 55px;
+}
+
+.temp {
+    place-items: center
+}
+
+.temp-details>p>span,
+.grey {
+    color: #a3acc1;
+    font-size: 12px
+}
+
+.fa {
+    color: #a5a5b1
+}
