@@ -1354,3 +1354,52 @@
         margin: 30px 0 10px 0 !important;
     }
 }
+
+.swal2-styled.swal2-confirm {
+    border-radius: 15px !important;
+    background-color: #4e2f24 !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: none !important;
+}
+
+.swal2-styled.swal2-cancel {
+    border-radius: 15px !important;
+    background-color: #f0f0f0 !important;
+    color: #4e2f24 !important;
+}
+
+.swal2-close:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.swal2-popup {
+    border-radius: 30px !important;
+    padding: 20px !important;
+}
+
+.swal2-title {
+    font-size: 1.7em !important;
+}
+
+.swal2-actions {
+    margin: 1.25em auto 0.8em !important;
+}
+
+.swal2-image {
+    max-width: 100% !important;
+    border-radius: 24px !important;
+}
+
+.page-item .page-link {
+    border-radius: 9px !important;
+    margin: 0 4px !important;
+}
+
+.dataTables_wrapper .dataTable {
+    padding: 0.1rem 0.2rem !important;
+}

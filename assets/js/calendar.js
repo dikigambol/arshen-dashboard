@@ -16,27 +16,27 @@ document.addEventListener('DOMContentLoaded', function () {
         events: [
             {
                 title: 'Cafe Music Event',
-                start: '2022-01-01'
+                start: '2022-02-01'
             },
             {
                 title: 'Discount Coffee',
-                start: '2022-01-07',
-                end: '2022-01-10'
+                start: '2022-02-11',
+                end: '2022-02-15'
             },
             {
                 groupId: '999',
-                title: 'Beans buy',
-                start: '2022-01-09T16:00:00'
+                title: 'Beans restock',
+                start: '2022-02-10T16:30:00'
             },
             {
                 groupId: '999',
-                title: 'Beans buy',
-                start: '2022-01-16T16:00:00'
+                title: 'Beans restock',
+                start: '2022-02-16T16:40:00'
             },
             {
-                title: 'Youtube',
-                url: 'http://youtube.com/',
-                start: '2022-01-28'
+                title: 'My Github',
+                url: 'https://dikigambol.github.io/arshen-coffee/',
+                start: '2022-02-28'
             }
         ]
     });

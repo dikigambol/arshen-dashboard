@@ -433,8 +433,9 @@ small,
 
 mark,
 .mark {
-  padding: 0.2em;
+  padding: 0.2em 0.7em !important;
   background-color: #fcf8e3;
+  border-radius: 5px;
 }
 
 .list-unstyled {
@@ -2493,7 +2494,7 @@ textarea.is-invalid.tt-hint {
   }
 }
 
-.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard>.actions a {
+.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .wizard>.actions a {
   display: inline-block;
   font-weight: 400;
   color: #1F1F1F;
@@ -2510,35 +2511,34 @@ textarea.is-invalid.tt-hint {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard>.actions a {
+  .btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .wizard>.actions a {
     transition: none;
   }
 }
 
-.btn:hover, .fc button:hover, .ajax-upload-dragdrop .ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .swal2-styled:hover, .wizard>.actions a:hover {
+.btn:hover, .fc button:hover, .ajax-upload-dragdrop .ajax-file-upload:hover, .wizard>.actions a:hover {
   color: #1F1F1F;
   text-decoration: none;
 }
 
-.btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .swal2-modal .swal2-buttonswrapper .swal2-styled:focus, .wizard>.actions a:focus, .btn.focus, .fc button.focus, .ajax-upload-dragdrop .focus.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .focus.swal2-styled, .wizard>.actions a.focus {
+.btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .wizard>.actions a.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled, .fc button.disabled, .ajax-upload-dragdrop .disabled.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .disabled.swal2-styled, .wizard>.actions a.disabled, .btn:disabled, .fc button:disabled, .ajax-upload-dragdrop .ajax-file-upload:disabled, .swal2-modal .swal2-buttonswrapper .swal2-styled:disabled, .wizard>.actions a:disabled {
+.btn.disabled, .fc button.disabled, .ajax-upload-dragdrop .disabled.ajax-file-upload, .wizard>.actions a.disabled, .btn:disabled, .fc button:disabled, .ajax-upload-dragdrop .ajax-file-upload:disabled, .wizard>.actions a:disabled {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled), .fc button:not(:disabled):not(.disabled), .ajax-upload-dragdrop .ajax-file-upload:not(:disabled):not(.disabled), .swal2-modal .swal2-buttonswrapper .swal2-styled:not(:disabled):not(.disabled), .wizard>.actions a:not(:disabled):not(.disabled) {
+.btn:not(:disabled):not(.disabled), .fc button:not(:disabled):not(.disabled), .ajax-upload-dragdrop .ajax-file-upload:not(:disabled):not(.disabled), .wizard>.actions a:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
-a.btn.disabled, .ajax-upload-dragdrop a.disabled.ajax-file-upload, .swal2-modal .swal2-buttonswrapper a.disabled.swal2-styled, .wizard>.actions a.disabled,
+a.btn.disabled, .ajax-upload-dragdrop a.disabled.ajax-file-upload, .wizard>.actions a.disabled,
 fieldset:disabled a.btn,
 fieldset:disabled .ajax-upload-dragdrop a.ajax-file-upload,
 .ajax-upload-dragdrop fieldset:disabled a.ajax-file-upload,
-fieldset:disabled .swal2-modal .swal2-buttonswrapper a.swal2-styled,
-.swal2-modal .swal2-buttonswrapper fieldset:disabled a.swal2-styled,
+fieldset:disabled,
 fieldset:disabled .wizard>.actions a,
 .wizard>.actions fieldset:disabled a {
   pointer-events: none;
@@ -3113,14 +3113,14 @@ fieldset:disabled .wizard>.actions a,
   pointer-events: none;
 }
 
-.btn-lg, .btn-group-lg>.btn, .fc .btn-group-lg>button, .ajax-upload-dragdrop .btn-group-lg>.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-group-lg>.swal2-styled, .wizard>.actions .btn-group-lg>a {
+.btn-lg, .btn-group-lg>.btn, .fc .btn-group-lg>button, .ajax-upload-dragdrop .btn-group-lg>.ajax-file-upload, .btn-group-lg>.wizard>.actions .btn-group-lg>a {
   padding: 1rem 3rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.1875rem;
 }
 
-.btn-sm, .btn-group-sm>.btn, .fc .btn-group-sm>button, .ajax-upload-dragdrop .btn-group-sm>.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .btn-group-sm>.swal2-styled, .wizard>.actions .btn-group-sm>a, .fc button {
+.btn-sm, .btn-group-sm>.btn, .fc .btn-group-sm>button, .ajax-upload-dragdrop .btn-group-sm>.ajax-file-upload, .wizard>.actions .btn-group-sm>a, .fc button {
   padding: 0.5rem 0.81rem;
   font-size: 0.812rem;
   line-height: 1.5;
@@ -3440,12 +3440,12 @@ input[type="button"].btn-block {
   margin-right: 0;
 }
 
-.btn-sm+.dropdown-toggle-split, .btn-group-sm>.btn+.dropdown-toggle-split, .fc .btn-group-sm>button+.dropdown-toggle-split, .ajax-upload-dragdrop .btn-group-sm>.ajax-file-upload+.dropdown-toggle-split, .swal2-modal .swal2-buttonswrapper .btn-group-sm>.swal2-styled+.dropdown-toggle-split, .wizard>.actions .btn-group-sm>a+.dropdown-toggle-split, .fc button+.dropdown-toggle-split {
+.btn-sm+.dropdown-toggle-split, .btn-group-sm>.btn+.dropdown-toggle-split, .fc .btn-group-sm>button+.dropdown-toggle-split, .ajax-upload-dragdrop .btn-group-sm>.ajax-file-upload+.dropdown-toggle-split, .wizard>.actions .btn-group-sm>a+.dropdown-toggle-split, .fc button+.dropdown-toggle-split {
   padding-right: 0.6075rem;
   padding-left: 0.6075rem;
 }
 
-.btn-lg+.dropdown-toggle-split, .btn-group-lg>.btn+.dropdown-toggle-split, .fc .btn-group-lg>button+.dropdown-toggle-split, .ajax-upload-dragdrop .btn-group-lg>.ajax-file-upload+.dropdown-toggle-split, .swal2-modal .swal2-buttonswrapper .btn-group-lg>.swal2-styled+.dropdown-toggle-split, .wizard>.actions .btn-group-lg>a+.dropdown-toggle-split {
+.btn-lg+.dropdown-toggle-split, .btn-group-lg>.btn+.dropdown-toggle-split, .fc .btn-group-lg>button+.dropdown-toggle-split, .ajax-upload-dragdrop .btn-group-lg>.ajax-file-upload+.dropdown-toggle-split, .wizard>.actions .btn-group-lg>a+.dropdown-toggle-split {
   padding-right: 2.25rem;
   padding-left: 2.25rem;
 }
@@ -4371,7 +4371,7 @@ a.badge:hover, a.badge:focus {
   display: none;
 }
 
-.btn .badge, .fc button .badge, .ajax-upload-dragdrop .ajax-file-upload .badge, .swal2-modal .swal2-buttonswrapper .swal2-styled .badge, .wizard>.actions a .badge {
+.btn .badge, .fc button .badge, .ajax-upload-dragdrop .ajax-file-upload .badge, .wizard>.actions a .badge {
   position: relative;
   top: -1px;
 }
@@ -4526,7 +4526,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  border-radius: 0.25rem;
+  border-radius: 15px;
 }
 
 .alert-heading {
@@ -4548,12 +4548,6 @@ a.badge-dark:focus, a.badge-dark.focus {
   z-index: 2;
   padding: 0.75rem 1.25rem;
   color: inherit;
-}
-
-.alert-primary {
-  color: #272659;
-  background-color: #dbdbee;
-  border-color: #cdcce8;
 }
 
 .alert-primary hr {
@@ -5931,16 +5925,14 @@ button.bg-secondary:focus {
   background-color: #898b8c !important;
 }
 
-.bg-success, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .settings-panel .color-tiles .tiles.success {
+.bg-success, .settings-panel .color-tiles .tiles.success {
   background-color: #2e8b57 !important;
 }
 
-a.bg-success:hover, .swal2-modal .swal2-buttonswrapper a.swal2-styled.swal2-confirm:hover, .settings-panel .color-tiles a.tiles.success:hover, a.bg-success:focus, .swal2-modal .swal2-buttonswrapper a.swal2-styled.swal2-confirm:focus, .settings-panel .color-tiles a.tiles.success:focus,
+a.bg-success:hover, .settings-panel .color-tiles a.tiles.success:hover, a.bg-success:focus, .settings-panel .color-tiles a.tiles.success:focus,
 button.bg-success:hover,
-.swal2-modal .swal2-buttonswrapper button.swal2-styled.swal2-confirm:hover,
 .settings-panel .color-tiles button.tiles.success:hover,
 button.bg-success:focus,
-.swal2-modal .swal2-buttonswrapper button.swal2-styled.swal2-confirm:focus,
 .settings-panel .color-tiles button.tiles.success:focus {
   background-color: #267548 !important;
 }
@@ -6063,7 +6055,7 @@ button.bg-dark:focus,
   border-color: #f27c4a !important;
 }
 
-.border-success, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm {
+.border-success {
   border-color: #2e8b57 !important;
 }
 
@@ -6169,7 +6161,7 @@ button.bg-dark:focus,
   display: table-cell !important;
 }
 
-.d-flex, .loader-demo-box, .data-icon-card-primary .background-icon, .data-icon-card-secondary .background-icon, .data-icon-card-success .background-icon, .data-icon-card-info .background-icon, .data-icon-card-warning .background-icon, .data-icon-card-danger .background-icon, .data-icon-card-light .background-icon, .data-icon-card-dark .background-icon, .list-wrapper ul li, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user, .email-wrapper .mail-list-container .mail-list .details, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons, .lightGallery .image-tile .demo-gallery-poster, .swal2-modal, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
+.d-flex, .loader-demo-box, .data-icon-card-primary .background-icon, .data-icon-card-secondary .background-icon, .data-icon-card-success .background-icon, .data-icon-card-info .background-icon, .data-icon-card-warning .background-icon, .data-icon-card-danger .background-icon, .data-icon-card-light .background-icon, .data-icon-card-dark .background-icon, .list-wrapper ul li, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a, .email-wrapper .mail-sidebar .menu-bar .profile-list-item a .user, .email-wrapper .mail-list-container .mail-list .details, .email-wrapper .message-body .attachments-sections ul li .thumb, .email-wrapper .message-body .attachments-sections ul li .details .buttons, .lightGallery .image-tile .demo-gallery-poster, .navbar .navbar-menu-wrapper .navbar-nav, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-profile, .navbar .navbar-menu-wrapper .navbar-nav .nav-item.dropdown .navbar-dropdown .dropdown-item, .navbar .navbar-menu-wrapper .navbar-nav.navbar-nav-right .nav-item {
   display: flex !important;
 }
 
@@ -7404,7 +7396,7 @@ button.bg-dark:focus,
   margin-top: 0.5rem !important;
 }
 
-.mr-2, .template-demo>.btn, .fc .template-demo>button, .ajax-upload-dragdrop .template-demo>.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .template-demo>.swal2-styled, .wizard>.actions .template-demo>a, .template-demo>.btn-group, .fc .template-demo>.fc-button-group,
+.mr-2, .template-demo>.btn, .fc .template-demo>button, .ajax-upload-dragdrop .template-demo>.ajax-file-upload, .wizard>.actions .template-demo>a, .template-demo>.btn-group, .fc .template-demo>.fc-button-group,
 .template-demo>.btn-group-vertical, .template-demo>.dropdown,
 .mx-2 {
   margin-right: 0.5rem !important;
@@ -7424,7 +7416,7 @@ button.bg-dark:focus,
   margin: 1rem !important;
 }
 
-.mt-3, .template-demo>.btn, .fc .template-demo>button, .ajax-upload-dragdrop .template-demo>.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .template-demo>.swal2-styled, .wizard>.actions .template-demo>a, .template-demo>.btn-toolbar,
+.mt-3, .template-demo>.btn, .fc .template-demo>button, .ajax-upload-dragdrop .template-demo>.ajax-file-upload, .wizard>.actions .template-demo>a, .template-demo>.btn-toolbar,
 .my-3 {
   margin-top: 1rem !important;
 }
@@ -10008,18 +10000,16 @@ textarea {
   overflow-x: hidden;
 }
 
-.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-confirm, .swal2-modal .swal2-buttonswrapper .swal2-styled.swal2-cancel, .wizard>.actions a,
+.btn, .fc button, .ajax-upload-dragdrop .ajax-file-upload, .wizard>.actions a,
 .btn-group.open .dropdown-toggle,
 .fc .open.fc-button-group .dropdown-toggle,
 .btn:active,
 .fc button:active,
 .ajax-upload-dragdrop .ajax-file-upload:active,
-.swal2-modal .swal2-buttonswrapper .swal2-styled:active,
-.wizard>.actions a:active, .btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .swal2-modal .swal2-buttonswrapper .swal2-styled:focus, .wizard>.actions a:focus, .btn:hover, .fc button:hover, .ajax-upload-dragdrop .ajax-file-upload:hover, .swal2-modal .swal2-buttonswrapper .swal2-styled:hover, .wizard>.actions a:hover,
+.wizard>.actions a:active, .btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .wizard>.actions a:hover,
 .btn:visited,
 .fc button:visited,
 .ajax-upload-dragdrop .ajax-file-upload:visited,
-.swal2-modal .swal2-buttonswrapper .swal2-styled:visited,
 .wizard>.actions a:visited,
 a,
 a:active,
@@ -10052,22 +10042,19 @@ textarea:visited {
   box-shadow: none;
 }
 
-.btn.active.focus, .fc button.active.focus, .ajax-upload-dragdrop .active.focus.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .active.focus.swal2-styled, .wizard>.actions a.active.focus,
+.btn.active.focus, .fc button.active.focus, .ajax-upload-dragdrop .active.focus.ajax-file-upload, .wizard>.actions a.active.focus,
 .btn.active:focus,
 .fc button.active:focus,
 .ajax-upload-dragdrop .active.ajax-file-upload:focus,
-.swal2-modal .swal2-buttonswrapper .active.swal2-styled:focus,
-.wizard>.actions a.active:focus, .btn.focus, .fc button.focus, .ajax-upload-dragdrop .focus.ajax-file-upload, .swal2-modal .swal2-buttonswrapper .focus.swal2-styled, .wizard>.actions a.focus,
+.wizard>.actions a.active:focus, .btn.focus, .fc button.focus, .ajax-upload-dragdrop .focus.ajax-file-upload, .wizard>.actions a.focus,
 .btn:active.focus,
 .fc button:active.focus,
 .ajax-upload-dragdrop .ajax-file-upload:active.focus,
-.swal2-modal .swal2-buttonswrapper .swal2-styled:active.focus,
 .wizard>.actions a:active.focus,
 .btn:active:focus,
 .fc button:active:focus,
 .ajax-upload-dragdrop .ajax-file-upload:active:focus,
-.swal2-modal .swal2-buttonswrapper .swal2-styled:active:focus,
-.wizard>.actions a:active:focus, .btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .swal2-modal .swal2-buttonswrapper .swal2-styled:focus, .wizard>.actions a:focus,
+.wizard>.actions a:active:focus, .btn:focus, .fc button:focus, .ajax-upload-dragdrop .ajax-file-upload:focus, .wizard>.actions a:focus,
 button,
 button:active,
 button:checked,
@@ -10909,227 +10896,51 @@ code {
 }
 
 .alert-primary {
-  color: #393783;
-  background-color: rgba(75, 73, 172, 0.2);
-  border-color: #45439e;
-}
-
-.alert-primary hr {
-  border-top-color: #3d3b8c;
-}
-
-.alert-primary .alert-link {
-  color: #29285f;
+  color: #704232;
+  background-color: rgba(112, 66, 50, 0.2);
+  border-color: #704232;
 }
 
 .alert-secondary {
-  color: #7c7d7d;
-  background-color: rgba(163, 164, 165, 0.2);
-  border-color: #969798;
-}
-
-.alert-secondary hr {
-  border-top-color: #898a8b;
-}
-
-.alert-secondary .alert-link {
-  color: #636363;
+  color: #f27c4a;
+  background-color: rgba(242, 124, 74, 0.2);
+  border-color: #f27c4a;
 }
 
 .alert-success {
-  color: #428a42;
-  background-color: rgba(87, 182, 87, 0.2);
-  border-color: #50a750;
-}
-
-.alert-success hr {
-  border-top-color: #489648;
-}
-
-.alert-success .alert-link {
-  color: #326832;
+  color: #2e8b57;
+  background-color: rgba(46, 139, 87, 0.2);
+  border-color: #2e8b57;
 }
 
 .alert-info {
-  color: #1b69c0;
-  background-color: rgba(36, 138, 253, 0.2);
-  border-color: #217fe9;
-}
-
-.alert-info hr {
-  border-top-color: #1672db;
-}
-
-.alert-info .alert-link {
-  color: #155193;
+  color: #58bca5;
+  background-color: rgba(88, 188, 165, 0.2);
+  border-color: #58bca5;
 }
 
 .alert-warning {
-  color: #c29300;
-  background-color: rgba(255, 193, 0, 0.2);
-  border-color: #ebb200;
-}
-
-.alert-warning hr {
-  border-top-color: #d29f00;
-}
-
-.alert-warning .alert-link {
-  color: #8f6c00;
+  color: #f2b939;
+  background-color: rgba(242, 185, 57, 0.2);
+  border-color: #f2b939;
 }
 
 .alert-danger {
-  color: #c23636;
-  background-color: rgba(255, 71, 71, 0.2);
-  border-color: #eb4141;
-}
-
-.alert-danger hr {
-  border-top-color: #e92a2a;
-}
-
-.alert-danger .alert-link {
-  color: #9a2b2b;
+  color: #ff6949;
+  background-color: rgba(255, 105, 73, 0.2);
+  border-color: #ff6949;
 }
 
 .alert-light {
-  color: #bcbdbe;
+  color: #54585d;
   background-color: rgba(248, 249, 250, 0.2);
-  border-color: #e4e5e6;
-}
-
-.alert-light hr {
-  border-top-color: #d7d8da;
-}
-
-.alert-light .alert-link {
-  color: #a2a4a5;
+  border-color: #54585d;
 }
 
 .alert-dark {
   color: #1e242c;
   background-color: rgba(40, 47, 58, 0.2);
   border-color: #252b35;
-}
-
-.alert-dark hr {
-  border-top-color: #1b1f26;
-}
-
-.alert-dark .alert-link {
-  color: #090b0e;
-}
-
-.alert-fill-primary {
-  color: #ffffff;
-  background-color: #704232;
-  border-color: #704232;
-}
-
-.alert-fill-primary hr {
-  border-top-color: #43419a;
-}
-
-.alert-fill-primary .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-secondary {
-  color: #ffffff;
-  background-color: #f27c4a;
-  border-color: #f27c4a;
-}
-
-.alert-fill-secondary hr {
-  border-top-color: #969798;
-}
-
-.alert-fill-secondary .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-success {
-  color: #ffffff;
-  background-color: #2e8b57;
-  border-color: #2e8b57;
-}
-
-.alert-fill-success hr {
-  border-top-color: #4aaa4a;
-}
-
-.alert-fill-success .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-info {
-  color: #ffffff;
-  background-color: #58bca5;
-  border-color: #58bca5;
-}
-
-.alert-fill-info hr {
-  border-top-color: #0b7dfd;
-}
-
-.alert-fill-info .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-warning {
-  color: #ffffff;
-  background-color: #f2b939;
-  border-color: #f2b939;
-}
-
-.alert-fill-warning hr {
-  border-top-color: #e6ae00;
-}
-
-.alert-fill-warning .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-danger {
-  color: #ffffff;
-  background-color: #ff6949;
-  border-color: #ff6949;
-}
-
-.alert-fill-danger hr {
-  border-top-color: #ff2e2e;
-}
-
-.alert-fill-danger .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-light {
-  color: #ffffff;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
-}
-
-.alert-fill-light hr {
-  border-top-color: #e9ecef;
-}
-
-.alert-fill-light .alert-link {
-  color: #e6e6e6;
-}
-
-.alert-fill-dark {
-  color: #ffffff;
-  background-color: #282f3a;
-  border-color: #282f3a;
-}
-
-.alert-fill-dark hr {
-  border-top-color: #1e232b;
-}
-
-.alert-fill-dark .alert-link {
-  color: #e6e6e6;
 }
 
 /* Bootstrap Progress */
@@ -11283,19 +11094,19 @@ code {
   padding-right: 0;
 }
 
-.breadcrumb.bg-success, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm, .settings-panel .color-tiles .breadcrumb.tiles.success, .breadcrumb.bg-dark, .settings-panel .color-tiles .breadcrumb.tiles.dark, .breadcrumb.bg-danger, .settings-panel .color-tiles .breadcrumb.tiles.danger, .breadcrumb.bg-warning, .settings-panel .color-tiles .breadcrumb.tiles.warning, .breadcrumb.bg-primary, .settings-panel .color-tiles .breadcrumb.tiles.primary, .breadcrumb.bg-info, .settings-panel .color-tiles .breadcrumb.tiles.info {
+.breadcrumb.bg-success, .settings-panel .color-tiles .breadcrumb.tiles.success, .breadcrumb.bg-dark, .settings-panel .color-tiles .breadcrumb.tiles.dark, .breadcrumb.bg-danger, .settings-panel .color-tiles .breadcrumb.tiles.danger, .breadcrumb.bg-warning, .settings-panel .color-tiles .breadcrumb.tiles.warning, .breadcrumb.bg-primary, .settings-panel .color-tiles .breadcrumb.tiles.primary, .breadcrumb.bg-info, .settings-panel .color-tiles .breadcrumb.tiles.info {
   border: none;
 }
 
-.breadcrumb.bg-success .breadcrumb-item, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item, .breadcrumb.bg-dark .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item, .breadcrumb.bg-danger .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item, .breadcrumb.bg-warning .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item, .breadcrumb.bg-primary .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item, .breadcrumb.bg-info .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item {
+.breadcrumb.bg-success .breadcrumb-item, .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item, .breadcrumb.bg-dark .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item, .breadcrumb.bg-danger .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item, .breadcrumb.bg-warning .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item, .breadcrumb.bg-primary .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item, .breadcrumb.bg-info .breadcrumb-item, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item {
   color: #ffffff;
 }
 
-.breadcrumb.bg-success .breadcrumb-item:before, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item:before, .breadcrumb.bg-dark .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item:before, .breadcrumb.bg-danger .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item:before, .breadcrumb.bg-warning .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item:before, .breadcrumb.bg-primary .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item:before, .breadcrumb.bg-info .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item:before {
+.breadcrumb.bg-success .breadcrumb-item:before, .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item:before, .breadcrumb.bg-dark .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item:before, .breadcrumb.bg-danger .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item:before, .breadcrumb.bg-warning .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item:before, .breadcrumb.bg-primary .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item:before, .breadcrumb.bg-info .breadcrumb-item:before, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item:before {
   color: inherit;
 }
 
-.breadcrumb.bg-success .breadcrumb-item a, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item a, .breadcrumb.bg-success .breadcrumb-item span, .swal2-modal .swal2-buttonswrapper .breadcrumb.swal2-styled.swal2-confirm .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item span, .breadcrumb.bg-dark .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item a, .breadcrumb.bg-dark .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item span, .breadcrumb.bg-danger .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item a, .breadcrumb.bg-danger .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item span, .breadcrumb.bg-warning .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item a, .breadcrumb.bg-warning .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item span, .breadcrumb.bg-primary .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item a, .breadcrumb.bg-primary .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item span, .breadcrumb.bg-info .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item a, .breadcrumb.bg-info .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item span {
+.breadcrumb.bg-success .breadcrumb-item a, .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item a, .breadcrumb.bg-success .breadcrumb-item span, .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.success .breadcrumb-item span, .breadcrumb.bg-dark .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item a, .breadcrumb.bg-dark .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.dark .breadcrumb-item span, .breadcrumb.bg-danger .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item a, .breadcrumb.bg-danger .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.danger .breadcrumb-item span, .breadcrumb.bg-warning .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item a, .breadcrumb.bg-warning .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.warning .breadcrumb-item span, .breadcrumb.bg-primary .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item a, .breadcrumb.bg-primary .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.primary .breadcrumb-item span, .breadcrumb.bg-info .breadcrumb-item a, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item a, .breadcrumb.bg-info .breadcrumb-item span, .settings-panel .color-tiles .breadcrumb.tiles.info .breadcrumb-item span {
   color: inherit;
 }
 
@@ -11447,14 +11258,14 @@ code {
 
 .card-inverse-primary {
   background: rgba(75, 73, 172, 0.2);
-  border: 1px solid #45439e;
-  color: #393783;
+  border: 1px solid #704232;
+  color: #704232;
 }
 
 .card-inverse-secondary {
   background: rgba(163, 164, 165, 0.2);
-  border: 1px solid #969798;
-  color: #7c7d7d;
+  border: 1px solid #f27c4a;
+  color: #f27c4a;
 }
 
 .card-inverse-success {
@@ -13017,12 +12828,12 @@ dl li {
   border-radius: 4px;
 }
 
-.dataTables_wrapper .dataTable .btn, .dataTables_wrapper .dataTable .fc button, .fc .dataTables_wrapper .dataTable button, .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload, .ajax-upload-dragdrop .dataTables_wrapper .dataTable .ajax-file-upload, .dataTables_wrapper .dataTable .swal2-modal .swal2-buttonswrapper .swal2-styled, .swal2-modal .swal2-buttonswrapper .dataTables_wrapper .dataTable .swal2-styled, .dataTables_wrapper .dataTable .wizard>.actions a, .wizard>.actions .dataTables_wrapper .dataTable a {
+.dataTables_wrapper .dataTable .btn, .dataTables_wrapper .dataTable .fc button, .fc .dataTables_wrapper .dataTable button, .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload, .ajax-upload-dragdrop .dataTables_wrapper .dataTable .ajax-file-upload, .dataTables_wrapper .dataTable, .dataTables_wrapper .dataTable .wizard>.actions a, .wizard>.actions .dataTables_wrapper .dataTable a {
   padding: 0.1rem 1rem;
   vertical-align: top;
 }
 
-.dataTables_wrapper .dataTable .btn i, .dataTables_wrapper .dataTable .fc button i, .fc .dataTables_wrapper .dataTable button i, .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload i, .ajax-upload-dragdrop .dataTables_wrapper .dataTable .ajax-file-upload i, .dataTables_wrapper .dataTable .swal2-modal .swal2-buttonswrapper .swal2-styled i, .swal2-modal .swal2-buttonswrapper .dataTables_wrapper .dataTable .swal2-styled i, .dataTables_wrapper .dataTable .wizard>.actions a i, .wizard>.actions .dataTables_wrapper .dataTable a i {
+.dataTables_wrapper .dataTable .btn i, .dataTables_wrapper .dataTable .fc button i, .fc .dataTables_wrapper .dataTable button i, .dataTables_wrapper .dataTable .ajax-upload-dragdrop .ajax-file-upload i, .ajax-upload-dragdrop .dataTables_wrapper .dataTable .ajax-file-upload i, .dataTables_wrapper .dataTable, .dataTables_wrapper .dataTable .wizard>.actions a i, .wizard>.actions .dataTables_wrapper .dataTable a i {
   font-size: .875rem;
   margin-right: .3rem;
 }
@@ -13096,8 +12907,7 @@ dl li {
 }
 
 .expandable-table tr.odd, .expandable-table tr.even {
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px;
-  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.03); */
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 3px;
 }
 
 .expandable-table tr:last-child {
