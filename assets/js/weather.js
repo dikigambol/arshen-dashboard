@@ -3,7 +3,8 @@ $.ajax({
     jsonpCallback: "callback",
     dataType: "jsonp",
     success: function (location) {
-        weather(location.city);
+        let loc = location.city ?? "Malang"
+        weather(loc);
     }
 });
 
