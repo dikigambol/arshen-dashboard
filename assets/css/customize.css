@@ -1418,6 +1418,96 @@
     font-size: 12px
 }
 
-.fa {
-    color: #a5a5b1
+
+.input-file {
+    display: table !important;
+    border-collapse: collapse !important;
+    width: 100% !important;
+}
+
+.input-file>div {
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+.input-file-area {
+    width: 100% !important;
+}
+
+.btn-upload {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
+.file-info {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    height: 44px !important;
+}
+
+.input-grouped {
+    display: table;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.input-grouped>div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.input-grouped-icon {
+    background: #CED4DA;
+    color: rgb(255, 255, 255);
+    padding: 2px 15px 0 19px;
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+}
+
+.input-grouped-area {
+    width: 100%;
+}
+
+.input-grouped {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    display: block !important;
+}
+
+.select2-container--default .select2-selection--single {
+    border: 1px solid #CED4DA;
+    border-radius: 10px !important;
+}
+
+.tab {
+    display: none
+}
+
+input.invalid {
+    background-color: #ffeae2;
+    border: 1px solid #f27c4a;
+}
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5
+}
+
+.step.active {
+    opacity: 1
+}
+
+.step.finish {
+    background-color: #f27c4a;
+}
+
+.all-steps {
+    text-align: center;
+    margin-bottom: 10px
 }

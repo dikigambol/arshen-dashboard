@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Arshen Dashboard</title>
+
+    <!-- CSS Plugin -->
+    <link rel="stylesheet" href="../../assets/vendors/datatables-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../../assets/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="../../assets/vendors/feather/feather.css">
+    <link rel="stylesheet" href="../../assets/vendors/flatpickr/flatpickr.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/select-2/select2.min.css">
+
+    <!-- font poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- style css  -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/customize.css">
+
+    <!-- icon website-->
+    <link rel="shortcut icon" href="" />
+</head>
+
+<body class="sidebar-icon-only">
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper">
+            <!-- sidebar  -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <img class="sm-to-md-none img-nav" src="../../assets/images/logo-mini.svg" alt="">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">
+                            <i class="icon-grid menu-icon"></i>
+                            <span class="menu-title">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false"
+                            aria-controls="ui-basic">
+                            <i class="icon-layout menu-icon white-icon"></i>
+                            <span class="menu-title">UI Element</span>
+                            <i class="menu-arrow white-icon"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/widget.html">
+                                        Widget
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/accordion.html">
+                                        Accordion
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/tabs.html">
+                                        Tab & Pill
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/buttons.html">
+                                        Button
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/badge.html">
+                                        Badge
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/progress.html">
+                                        Progressbar
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/typography.html">
+                                        Typography
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../ui-element/breadcrumb.html">
+                                        Breadcrumb
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../form/form.html">
+                            <i class="icon-columns menu-icon"></i>
+                            <span class="menu-title">Form</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../table/table.html">
+                            <i class="icon-grid-2 menu-icon"></i>
+                            <span class="menu-title">Table</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../chart/chart.html">
+                            <i class="icon-bar-graph menu-icon"></i>
+                            <span class="menu-title">Chart</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../alert/alert.html">
+                            <i class="ti-announcement menu-icon"></i>
+                            <span class="menu-title">Alert</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../icon/icon.html">
+                            <i class="ti-heart menu-icon"></i>
+                            <span class="menu-title">Icon</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../calendar/calendar.html">
+                            <i class="ti-calendar menu-icon"></i>
+                            <span class="menu-title">Calendar</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic-2" aria-expanded="false"
+                            aria-controls="ui-basic-2">
+                            <i class="ti-user menu-icon white-icon"></i>
+                            <span class="menu-title">User Pages</span>
+                            <i class="menu-arrow white-icon"></i>
+                        </a>
+                        <div class="collapse" id="ui-basic-2">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../user-page/login.html">
+                                        Login
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../user-page/register.html">
+                                        Register
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- end sidebar  -->
+            <div class="main-panel">
+                <div class="content-wrapper padding-content">
+                    <div class="row">
+                        <div class="col-xl-12 mb-3">
+                            <h3 class="font-weight-bold vcenter">Form</h3>
+                            <button class="navbar-toggler burger-btn-menu d-xl-none" type="button"
+                                data-toggle="offcanvas">
+                                <span class="icon-menu"></span>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 grid-margin">
+                                <div class="card">
+                                    <div class="card-body p-5">
+                                        <h4 class="card-title">Basic form</h4>
+                                        <form>
+                                            <div class="form-group">
+                                                <label>fullname</label>
+                                                <input type="text" class="form-control" placeholder="fullname">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>email</label>
+                                                <input type="email" class="form-control" placeholder="email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>password</label>
+                                                <input type="password" class="form-control" placeholder="password">
+                                            </div>
+                                            <div class="float-right">
+                                                <button class="btn btn-light mr-2">Cancel</button>
+                                                <button type="submit" class="btn btn-primary">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body p-5">
+                                        <h4 class="card-title">Inline Form</h4>
+                                        <form>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">first name</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" placeholder="first name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label class="col-sm-3 col-form-label">last name</label>
+                                                <div class="col-sm-9">
+                                                    <input type="text" class="form-control" placeholder="last name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="exampleInputEmail2"
+                                                    class="col-sm-3 col-form-label">email</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" placeholder="Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="exampleInputPassword2"
+                                                    class="col-sm-3 col-form-label">password</label>
+                                                <div class="col-sm-9">
+                                                    <input type="password" class="form-control" placeholder="Password">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body p-5">
+                                        <h4 class="card-title">Input form elements</h4>
+                                        <form class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>Input text</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Input number</label>
+                                                    <input type="number" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail3">Input email</label>
+                                                    <input type="email" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Input password</label>
+                                                    <input type="password" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Input select</label>
+                                                    <select class="form-control" required>
+                                                        <option>option 1</option>
+                                                        <option>option 2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label>File upload</label>
+                                                    <input type="file" name="" class="file-upload">
+                                                    <div class="input-file">
+                                                        <div class="input-file-area">
+                                                            <input type="text" class="form-control file-info" disabled
+                                                                placeholder="upload files">
+                                                        </div>
+                                                        <button class="btn btn-primary btn-upload" type="button">
+                                                            upload
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Input Date</label>
+                                                    <p class="card-description">To use add
+                                                        class<code>date-flaltpickr</code> in select input class</p>
+                                                    <input type="date" class="form-control date-flaltpickr"
+                                                        placeholder="select date" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Input Group</label>
+                                                    <div class="input-grouped">
+                                                        <div class="input-grouped-icon">
+                                                            <i class="ti-user"></i>
+                                                        </div>
+                                                        <div class="input-grouped-area">
+                                                            <input type="text" class="form-control input-grouped">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleTextarea1">Textarea</label>
+                                                    <textarea class="form-control" id="exampleTextarea1" rows="4"
+                                                        required></textarea>
+                                                </div>
+                                                <div class="float-right">
+                                                    <button class="btn btn-light mr-2">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body pt-5 pr-5 pl-5">
+                                        <h4 class="card-title">Checkbox & Radio Input</h4>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input">
+                                                                Checkbox
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Checked
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" disabled
+                                                                    checked>
+                                                                Disabled
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="optionsRadios" id="optionsRadios1" value="">
+                                                                Radio
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="optionsRadios" id="optionsRadios2"
+                                                                    value="option2" checked>
+                                                                Selected
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="optionsRadio2" id="optionsRadios4"
+                                                                    value="option4" disabled checked>
+                                                                Disabled
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-body pb-5 pr-5 pl-5">
+                                        <p class="card-description">To use <code>.form-check-{color}</code></p>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check form-check-primary">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Primary
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-success">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Success
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-info">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Info
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-danger">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Danger
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-warning">
+                                                            <label class="form-check-label">
+                                                                <input type="checkbox" class="form-check-input" checked>
+                                                                Warning
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <div class="form-check form-check-primary">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="ExampleRadio1" id="ExampleRadio1" checked>
+                                                                Primary
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-success">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="ExampleRadio2" id="ExampleRadio2" checked>
+                                                                Success
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-info">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="ExampleRadio3" id="ExampleRadio3" checked>
+                                                                Info
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-danger">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="ExampleRadio4" id="ExampleRadio4" checked>
+                                                                Danger
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check form-check-warning">
+                                                            <label class="form-check-label">
+                                                                <input type="radio" class="form-check-input"
+                                                                    name="ExampleRadio5" id="ExampleRadio5" checked>
+                                                                Warning
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body p-5">
+                                        <h4 class="card-title">Select 2</h4>
+                                        <p class="card-description">To use add
+                                            class<code>.select2-single</code> in select input class</p>
+                                        <div class="form-group">
+                                            <label>Single select</label>
+                                            <select class="select2-single form-control">
+                                                <option value="">select</option>
+                                                <option value="">option 1</option>
+                                                <option value="">option 2</option>
+                                                <option value="">option 3</option>
+                                                <option value="">option 3</option>
+                                                <option value="">option 5</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Multiple select</label>
+                                            <select class="select2-single form-control" multiple="multiple">
+                                                <option value="">option 1</option>
+                                                <option value="">option 2</option>
+                                                <option value="">option 3</option>
+                                                <option value="">option 3</option>
+                                                <option value="">option 5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body p-5">
+                                        <h4 class="card-title">Wizard Form</h4>
+                                        <form id="regForm">
+                                            <div class="tab">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12 mt-2 mb-2">
+                                                        <input type="text" class="form-control" placeholder="first name"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 mt-2 mb-2">
+                                                        <input type="text" class="form-control" placeholder="last name"
+                                                            required>
+                                                    </div>
+                                                    <div class="col-sm-12 mt-2 mb-2">
+                                                        <input type="text" class="form-control" placeholder="email"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <textarea class="form-control" placeholder="address" required rows="5"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-12">
+                                                        <input type="text" class="form-control" placeholder="phone number" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="all-steps" id="all-steps">
+                                                <span class="step"></span>
+                                                <span class="step"></span>
+                                                <span class="step"></span>
+                                            </div>
+                                            <div id="nextprevious">
+                                                <div style="float:right;">
+                                                    <button type="button" class="btn btn-light" id="prevBtn"
+                                                        onclick="nextPrev(-1)">
+                                                        Previous
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary" id="nextBtn"
+                                                        onclick="nextPrev(1)">
+                                                        Next
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Vendors -->
+<script src="../../assets/vendors/jquery/jquery.min.js"></script>
+
+<!-- inject:js -->
+<script src="../../assets/js/off-canvas.js"></script>
+<script src="../../assets/js/hoverable-collapse.js"></script>
+<script src="../../assets/js/active-menu.js"></script>
+<script src="../../assets/js/forms.js"></script>
+<script src="../../assets/vendors/flatpickr/flatpickr.min.js"></script>
+<script src="../../assets/vendors/select-2/select-2.min.js"></script>
+<!-- endinject -->
+
+<script>
+    flatpickr(".date-flaltpickr");
+    $(document).ready(function () {
+        $('.select2-single').select2();
+    });
+</script>
+
+</html>
