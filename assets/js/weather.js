@@ -1,4 +1,4 @@
-let url = "http://api.weatherapi.com/v1/current.json?key=9ccd114b88bf4fe584d22306220802&q=malang&aqi=no"
+let url = "https://api.weatherapi.com/v1/current.json?key=9ccd114b88bf4fe584d22306220802&q=malang&aqi=no"
 fetch(url)
     .then((response) => {
         return response.json();
