@@ -757,19 +757,30 @@
 
 @media (min-width: 1024px) {
     .lg-above-none {
-        display: none;
+        display: none !important;
     }
 }
 
+@media (min-width: 1200px) {
+    .xl-above-none {
+        display: none !important;
+    }
+}
+
+
 @media (max-width: 1023px) {
     .sm-above-none {
-        display: none;
+        display: none !important;
     }
 }
 
 @media (max-width: 1199px) {
     .sm-to-md-none {
-        display: none;
+        display: none !important;
+    }
+
+    h3 {
+        font-size: 21px;
     }
 }
 
@@ -796,6 +807,14 @@
 
 .bill-panel::-webkit-scrollbar {
     display: none;
+}
+
+.sidebar-offcanvas::-webkit-scrollbar-thumb {
+    background: #e7e7e7;
+    border-radius: 8px;
+}
+.sidebar-offcanvas::-webkit-scrollbar-thumb:hover {
+    background: #d3d3d3;
 }
 
 .btn-cashier {
@@ -1273,11 +1292,38 @@
 }
 
 .img-nav {
-    width: 100%;
-    padding: 15px;
-    border-radius: 30px;
-    height: 100px;
+    width: 57px;
+    height: 57px;
     object-fit: cover;
+    display: block;
+    margin: 24px auto 45.5px auto;
+}
+
+.logo-header {
+    display: block;
+    margin: 0 auto 15px auto;
+    width: 200px;
+}
+
+@media (max-width: 575.98px) {
+    .logo-header {
+        margin: 0 auto 25px auto;
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo-header {
+        margin: 0 auto 40px auto;
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logo-header {
+        margin: 0 auto 30px auto;
+        width: 200px;
+    }
 }
 
 .profile-menu {
@@ -1483,7 +1529,7 @@
     display: none
 }
 
-input.invalid {
+.validate.invalid {
     background-color: #ffeae2;
     border: 1px solid #f27c4a;
 }
